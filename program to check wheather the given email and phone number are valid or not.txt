@@ -1,0 +1,11 @@
+#program to check wheather the given email and phone number are valid or not
+n=input("enter the phone number")
+email=input("enter the email address")
+c=0
+if email.endswith("@gmail.com"):
+    if len(n)==10:
+        if n.startswith("9")or n.startswith("8")or n.startswith("7")or n.startswith("6"):
+            print("registration successfull")
+            c=1
+if c==0:
+    print("check your details")
